@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SafeLine 개인정보처리방침</title>
+<style>
+  body {
+    font-family: -apple-system, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 {
+    font-size: 1.6em;
+    border-bottom: 3px solid #003366;
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+  }
+  .meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 1.2em;
+    color: #003366;
+    margin-top: 36px;
+    border-left: 4px solid #003366;
+    padding-left: 10px;
+  }
+  h3 {
+    font-size: 1.05em;
+    margin-top: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95em;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f4f6f8;
+    font-weight: 600;
+  }
+  .placeholder {
+    background: #fff3cd;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #856404;
+    font-weight: 600;
+  }
+  .note {
+    background: #f4f6f8;
+    border-left: 4px solid #999;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 0.92em;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<h1>SafeLine 개인정보처리방침</h1>
+<div class="meta">
+  시행일: 2026-07-20 ·
+  버전: 1.0 ·
+  운영: SK ons
+</div>
+
+<p>SafeLine(이하 "본 앱")은 통신 기지국·중계기 등 현장에서 근무하는 작업자의 안전을 위해
+환경 데이터(기상·재난 정보)와 위치 정보를 활용하여
+위험 상황을 조기에 안내하는 산업안전 모니터링 앱입니다. SK ons(이하 "회사")는
+이용자의 개인정보를 중요시하며, 「개인정보 보호법」 등 관련 법령을 준수합니다.
+본 방침은 본 앱이 수집하는 개인정보 항목, 이용 목적, 보관 기간 및 이용자의 권리를 안내합니다.</p>
+
+<div class="note" style="background:#e8f0fe;border-left-color:#003366;">
+<strong>핵심 요약: 회사는 이용자의 개인정보를 별도 서버에 수집·보관하지 않습니다.</strong><br>
+비상연락처, 위치 이력 등 대부분의 정보는 <strong>이용자의 단말기(스마트폰) 내부에만
+저장</strong>되며, 회사나 외부로 전송·보관되지 않습니다. 아래 각 항목에서 저장 위치와 전송 여부를
+구체적으로 표시했습니다. 본 문서에 기재된 담당 부서·연락처는 회사가 정보를 보관하고 있어서가
+아니라, 개인정보 처리 관련 문의(권한 안내, 삭제 방법 등)에 응답하기 위한 창구로서
+「개인정보 보호법」에 따라 명시하는 것입니다.
+</div>
+
+<div class="note">
+<strong>중요 안내</strong>: 본 앱은 의료기기가 아니며, 제공되는 위험도 정보는 <strong>의학적 진단이 아닌
+환경 데이터 기반의 위험도 평가 및 조기 경고</strong>입니다. 응급 상황 발생 시 반드시
+119 등 공식 응급 기관에 연락하시기 바랍니다.
+</div>
+
+<h2>1. 수집하는 개인정보 항목</h2>
+
+<table>
+<tr><th>구분</th><th>수집 항목</th><th>수집 방법</th></tr>
+<tr>
+  <td>계정 및 연락처</td>
+  <td>사용자 이름, 소속, 비상연락처(최대 2명의 이름·전화번호), 안전관리자 연락처</td>
+  <td>앱 내 설정 화면에서 사용자 직접 입력</td>
+</tr>
+<tr>
+  <td>위치 정보</td>
+  <td>GPS 기반 실시간 위치 정보</td>
+  <td>단말기 위치 센서 (ACCESS_FINE_LOCATION 권한)</td>
+</tr>
+<tr>
+  <td>기기 및 환경 정보</td>
+  <td>기기 배터리 상태, 네트워크 상태, 작업 환경 유형(고소/밀폐공간/일반 등 사용자 선택)</td>
+  <td>단말기 자동 수집 또는 사용자 선택</td>
+</tr>
+<tr>
+  <td>자동 발송 메시지</td>
+  <td>무응답 확인(Dead-man Switch) 미확인 시 비상연락처로 발송되는 SMS 내용(사용자 이름, 위치, 시각)</td>
+  <td>앱이 SEND_SMS 권한을 통해 자동 발송</td>
+</tr>
+</table>
+
+<h2>2. 개인정보 수집 및 이용 목적</h2>
+<ul>
+  <li>작업 현장의 기상·환경 위험(폭염, 한파, 강풍, 낙뢰, 집중호우 등) 실시간 안내 및 알림</li>
+  <li>낙상 또는 장시간 무응답 감지 시 비상연락처 및 안전관리자에게 자동 알림 발송 (Human-in-the-loop 원칙에 따라 자동 응급신고는 하지 않으며, 사용자 확인 절차를 우선함)</li>
+  <li>위치 기반 정부 재난문자·행동요령·주변 안전시설(대피소, 응급의료기관 등) 정보 제공</li>
+  <li>안전점검 이력 등 안전시설 관련 공공데이터 조회</li>
+</ul>
+
+<h2>3. 개인정보의 보유 및 이용 기간</h2>
+<ul>
+  <li><strong>비상연락처·사용자 설정 정보</strong>: 앱 삭제 또는 사용자의 삭제 요청 시까지 단말기 내 저장(로컬 DB), 별도 서버 전송·저장하지 않음</li>
+  <li><strong>위치 정보</strong>: 실시간 위험도 판단 및 재난문자 매칭에만 사용되며 별도로 저장하지 않음(단, WARNING 단계 이상의 안전 이벤트 이력은 시각·위치·날씨·원인을 로컬 DB에 기록하며, 사용자가 이력 화면에서 직접 삭제 가능)</li>
+  <li><strong>자동 발송 SMS 내용</strong>: 발송 즉시 통신사를 통해 전달되며, 회사가 별도로 서버에 보관하지 않음</li>
+</ul>
+
+<h2>4. 개인정보의 제3자 제공 및 처리 위탁</h2>
+<p>회사는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다. 다만 아래 공공데이터 API 및 인프라 사업자를 통해 <strong>위치 좌표(개인 식별 정보 미포함)</strong> 만을 조회 목적으로 전송합니다.</p>
+<ul>
+  <li>기상청(공공데이터포털) — 기상특보 조회</li>
+  <li>행정안전부 재난안전데이터공유플랫폼(safetydata.go.kr) — 재난문자, 행동요령, 안전시설·급경사지 정보 조회</li>
+  <li>국립중앙의료원(E-Gen) — 응급의료기관 정보 조회</li>
+  <li>Cloudflare, Inc. — API 호출 중계(프록시) 서버 운영, 개인정보 저장 없이 요청 중계만 수행</li>
+</ul>
+<p>위 기관·사업자는 이용자를 특정할 수 있는 개인정보(이름, 연락처 등)를 전달받지 않으며,
+위치 좌표 및 조회 목적의 요청 데이터만 처리합니다.</p>
+
+<h2>5. 이용자의 권리와 행사 방법</h2>
+<ul>
+  <li>이용자는 언제든지 앱 내 설정 화면에서 등록한 개인정보(비상연락처, 사용자 정보 등)를 조회, 수정, 삭제할 수 있습니다.</li>
+  <li>위치 정보, SMS 발송 권한은 단말기 설정에서 언제든지 철회할 수 있으며, 이 경우 관련 기능(위험도 알림, Dead-man Switch 등)이 제한될 수 있습니다.</li>
+  <li>개인정보 관련 문의: ATDT기획팀 (perfect.nam@sk.com)</li>
+</ul>
+
+<h2>6. 개인정보의 안전성 확보 조치</h2>
+<ul>
+  <li>비상연락처 등 민감 설정 정보는 서버 전송 없이 단말기 로컬 데이터베이스에만 저장</li>
+  <li>공공데이터 API 접근을 위한 인증키는 앱에 직접 저장하지 않고 프록시 서버(Cloudflare Workers)를 통해 관리</li>
+  <li>앱 배포용 코드는 난독화(ProGuard)를 적용하여 역공학을 통한 정보 노출 위험을 최소화</li>
+</ul>
+
+<h2>7. 만 14세 미만 아동 관련</h2>
+<p>본 앱은 통신 인프라 현장 근로자를 대상으로 하는 업무용 안전 앱으로, 만 14세 미만 아동을 대상으로 하지 않으며 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+<h2>8. 개인정보처리방침의 변경</h2>
+<p>본 방침은 법령, 정책 또는 앱 기능 변경에 따라 개정될 수 있으며, 변경 시 앱 내 공지 또는 본 페이지 갱신을 통해 안내합니다.</p>
+
+<h2>9. 문의처</h2>
+<p>
+  회사명: SK ons<br>
+  담당 부서: ATDT기획팀<br>
+  이메일: perfect.nam@sk.com
+</p>
+
+</body>
+</html>
